@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>personal site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto 0 auto;
+      padding: 0 20px;
+    }
+    .float-photo {
+      float: left;
+      width: 320px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      background: #eee;
+      margin: 0 32px 24px 0;
+      display: block;
+    }
+    .text-content {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #222;
+      text-align: left;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="container clearfix">
+    <img src="profile.jpg" alt="Your photo" class="float-photo">
+    <div class="text-content">
+      Hi! I'm Fujia, a 19 year old rising senior at UC Berkeley. <br><br>
+      I currently conduct research on quantization and cooperative perception at Berkeley AI Research (BAIR). <br><br>
+      I'm also a developer at Blockchain at Berkeley, where I lead Polygon's delegation and find new ways to doom scroll on crypto twitter. <br><br>
+      Previously, I played as scout player for Cal Men's Basketball and worked on DeFi trading automations as an engineer at Fountain. Now, I play less basketball and do more automation stuff at Amazon this summer in Seattle.
+      Outside of everything, I love trading, playing card games, and making lofi beats.
+    </div>
+  </div>
+</body>
+</html> 
