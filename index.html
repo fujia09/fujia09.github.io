@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>personal site</title>
+  <title>Fujia Wang</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -14,42 +14,148 @@
       padding: 0;
     }
     .container {
-      max-width: 700px;
-      margin: 60px auto 0 auto;
+      max-width: 900px;
+      margin: 120px auto 0 auto;
       padding: 0 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
     }
-    .float-photo {
-      float: left;
+    .profile-photo {
       width: 320px;
-      height: 400px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      max-width: 40vw;
+      height: auto;
+      border-radius: 0;
+      box-shadow: 0 2px 16px 0 rgba(162, 119, 255, 0.08);
       background: #eee;
-      margin: 0 32px 24px 0;
       display: block;
+      object-fit: cover;
     }
     .text-content {
-      font-size: 18px;
+      font-size: 15px;
       line-height: 1.7;
       color: #222;
       text-align: left;
+      font-family: 'Inter', Arial, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      max-width: 480px;
+      margin-top: 0;
     }
-    .clearfix::after {
-      content: "";
-      display: table;
-      clear: both;
+    .text-content h1, .text-content h2, .text-content h3 {
+      font-weight: 600;
+      margin-top: 0;
+    }
+    .cute-link {
+      color: #b48ead;
+      text-decoration: none;
+      border-bottom: 2px solid rgba(180, 142, 173, 0.3);
+      border-radius: 2px;
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+      font-weight: 500;
+      position: relative;
+    }
+    .cute-link:hover {
+      color: #a277ff;
+      border-bottom: 2px solid #a277ff;
+    }
+    .bair-link {
+      color: #4f8edc;
+      text-decoration: none;
+      border-bottom: 2px solid #b3d1f7;
+      border-radius: 2px;
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+      font-weight: 500;
+    }
+    .bair-link:hover {
+      color: #2563a6;
+      border-bottom: 2px solid #2563a6;
+    }
+    .fountain-link {
+      color: #888;
+      text-decoration: none;
+      border-bottom: 2px solid #ccc;
+      border-radius: 2px;
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+      font-weight: 500;
+    }
+    .fountain-link:hover {
+      color: #444;
+      border-bottom: 2px solid #444;
+    }
+    .blockchain-link {
+      color: #e6b800;
+      text-decoration: none;
+      border-bottom: 2px solid #ffe066;
+      border-radius: 2px;
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+      font-weight: 500;
+    }
+    .blockchain-link:hover {
+      color: #b38f00;
+      border-bottom: 2px solid #b38f00;
+    }
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+      .profile-photo {
+        max-width: 90vw;
+        width: 100%;
+      }
+      .text-content {
+        max-width: 100%;
+      }
+    }
+    .minilinks {
+      display: flex;
+      position: absolute;
+      top: 36px;
+      right: 40px;
+      gap: 28px;
+      margin: 0;
+      z-index: 10;
+    }
+    .minilink {
+      color: #111;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      padding: 2px 0;
+      border: none;
+      background: none;
+      transition: none;
+      cursor: pointer;
+    }
+    .minilink:hover, .minilink:focus {
+      color: #111;
+      text-decoration: none;
+      border: none;
+      background: none;
     }
   </style>
 </head>
 <body>
-  <div class="container clearfix">
-    <img src="profile.jpg" alt="Your photo" class="float-photo">
+  <nav class="minilinks">
+    <a href="mailto:fujiawang@berkeley.edu" class="minilink" title="Email">email</a>
+    <a href="https://linkedin.com/in/fujiawang" class="minilink" target="_blank" rel="noopener" title="LinkedIn">linkedin</a>
+    <a href="https://github.com/fujia09" class="minilink" target="_blank" rel="noopener" title="GitHub">github</a>
+    <a href="photography.html" class="minilink" title="Photography">photography</a>
+  </nav>
+  <div class="container">
+    <img src="profile.jpg" alt="Your photo" class="profile-photo">
     <div class="text-content">
       Hi! I'm Fujia, a 19 year old rising senior at UC Berkeley. <br><br>
-      I currently conduct research on quantization and cooperative perception at Berkeley AI Research (BAIR). <br><br>
-      I'm also a developer at Blockchain at Berkeley, where I lead Polygon's delegation and find new ways to doom scroll on crypto twitter. <br><br>
-      Previously, I played as scout player for Cal Men's Basketball and worked on DeFi trading automations as an engineer at Fountain. Now, I play less basketball and do more automation stuff at Amazon this summer in Seattle.
+      I currently conduct research on quantization and cooperative perception at Berkeley AI Research (<a href="https://bair.berkeley.edu/" target="_blank" class="bair-link">BAIR</a>). <br><br>
+      I'm also a developer at <a href="https://blockchain.studentorg.berkeley.edu/" target="_blank" class="blockchain-link">Blockchain at Berkeley</a>, where I lead <a href="https://polygon.technology/" target="_blank" class="cute-link">Polygon</a>'s delegation and find new ways to doom scroll on crypto twitter. <br><br>
+      Previously, I played as scout player for Cal Men's Basketball and worked on DeFi trading automations as an engineer at <a href="https://fountainplatform.com/" target="_blank" class="fountain-link">Fountain</a>. Now, I play less basketball and do more automation stuff at Amazon this summer in Seattle.
       Outside of everything, I love trading, playing card games, and making lofi beats.
     </div>
   </div>
