@@ -1,0 +1,7 @@
+# GitHub Pages configuration
+include: []
+exclude: []
+plugins: []
+
+# Disable Jekyll processing for XML files
+include: ["sitemap.xml"]
